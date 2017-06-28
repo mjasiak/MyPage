@@ -1,0 +1,22 @@
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Page in development</title>
+        <link rel="stylesheet" type="text/css" href="Styles/Css/site.css">
+    </head>
+    <body ng-controller="pageController">
+        {{hello}}
+        <nav>
+            <ul>
+                <li><a href="#/!">Główna</a></li>
+                <li><a href="#!about">O mnie</a></li>
+                <li><a href="#!contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <ng-view></ng-view>
+        <script src="Scripts/angular.js"></script>
+        <script src="Scripts/angular-route.js"></script>
+        <script src="Scripts/core/app.js"></script>
+        <script src="Scripts/controllers/pageController.js"></script>
+    </body>
+</html>
