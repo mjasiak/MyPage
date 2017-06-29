@@ -1,4 +1,4 @@
-.cvr {
+.containerImage {
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
@@ -6,9 +6,10 @@
     height: 54vh;
     max-height: 1200px;
     min-height: 200px;
+    position: relative;
 
     &:first-child {
-        height: 86vh;
+        height: 90vh;
     }
 }
 

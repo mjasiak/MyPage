@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 nav {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.3);
@@ -43,7 +45,7 @@ footer {
   bottom: 0;
 }
 
-.cvr {
+.containerImage {
   background-attachment: fixed;
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -51,14 +53,53 @@ footer {
   height: 54vh;
   max-height: 1200px;
   min-height: 200px;
+  position: relative;
 }
 
-.cvr:first-child {
-  height: 86vh;
+.containerImage:first-child {
+  height: 90vh;
 }
 
 .cvr-1 {
   background-image: url("../../Content/homeCover.jpg");
+}
+
+.homeContainer {
+  background-color: #eee;
+}
+
+.aboutContainer {
+  background-color: #eee;
+}
+
+.contactContainer {
+  background-color: #eee;
+}
+
+h1.homeWelcome {
+  font-size: 100px;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: -35px;
+}
+
+h1.aboutText {
+  text-align: center;
+}
+
+h5.homeWelcome {
+  font-size: 48px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.homeTextContainer {
+  position: absolute;
+  right: 50px;
+  top: 90%;
+  transform: translateY(-90%);
+}
+
+.containerText {
+  padding: 100px 50px;
 }
 
 html, body {

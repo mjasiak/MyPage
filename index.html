@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <title>Page in development</title>
         <link rel="stylesheet" type="text/css" href="Styles/Css/site.css">
+        <base href="">
     </head>
     <body ng-controller="pageController">
         <div class="container">
@@ -18,7 +19,6 @@
                 </div>
                 <div class="col-right">
                     <ng-view></ng-view>
-                    <footer>{{hello}}</footer>  
                 </div>                                     
             </div>                          
         </div>      
@@ -26,10 +26,9 @@
         <script src="https://use.fontawesome.com/030c47545b.js"></script>
         <script src="Scripts/angular.js"></script>
         <script src="Scripts/angular-route.js"></script>
-        <script src="Scripts/gator.min.js"></script>
+        <script src="Scripts/jquery-3.2.1.slim.min.js"></script>
         <script src="Scripts/core/app.js"></script>
         <script src="Scripts/controllers/pageController.js"></script>
-        <script src="Sciprts/site/paralaxController.js"></script>   
-        <script>ParalaxBG.init();</script>    
+        <script src="Scripts/site/paralaxController.js"></script>     
     </body>
 </html>
