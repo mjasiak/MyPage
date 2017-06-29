@@ -1,14 +1,16 @@
 var app = angular.module("myApp", ['ngRoute']);
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, $locationProvider){
     $routeProvider
-    .when("/",{
+    .when('/',{
         templateUrl : "./Views/home.html"
     })
-    .when("/about",{
+    .when('/about',{
         templateUrl : "./Views/about.html"
     })
-    .when("/contact",{
+    .when('/contact',{
         templateUrl : "./Views/contact.html"
     });
+
+    $locationProvider.html5Mode(true);
 });

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 nav {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.3);
@@ -64,12 +65,24 @@ footer {
   background-image: url("../../Content/homeCover.jpg");
 }
 
+.cvr-2 {
+  background-image: url("../../Content/railwayCover.jpg");
+}
+
+.cvr-3 {
+  background-image: url("../../Content/waterCover.jpg");
+}
+
 .homeContainer {
   background-color: #eee;
 }
 
 .aboutContainer {
   background-color: #eee;
+}
+
+.aboutContainer .containerText:first-child {
+  height: 90vh;
 }
 
 .contactContainer {
@@ -82,8 +95,10 @@ h1.homeWelcome {
   margin-bottom: -35px;
 }
 
-h1.aboutText {
+h1.aboutTextElement {
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 100px;
 }
 
 h5.homeWelcome {
@@ -99,7 +114,43 @@ h5.homeWelcome {
 }
 
 .containerText {
+  position: relative;
+}
+
+.containerTextInner {
+  position: relative;
   padding: 100px 50px;
+}
+
+.aboutText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.aboutDetail {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.aboutDetail h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+.aboutDetail h2 {
+  font-size: 22px;
+  margin-bottom: -25px;
+}
+
+.bg-red {
+  background-color: #f70942;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #4EB2F8;
+  color: white;
 }
 
 html, body {

@@ -16,3 +16,11 @@
 .cvr-1 {
   background-image: url("../../Content/homeCover.jpg");
 }
+
+.cvr-2 {
+  background-image: url("../../Content/railwayCover.jpg");
+}
+
+.cvr-3 {
+  background-image: url("../../Content/waterCover.jpg");
+}

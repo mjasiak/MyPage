@@ -1,3 +1,5 @@
+@import '_mixins.scss';
+
 $bngColor: #eee;
 
 .homeContainer {
@@ -6,6 +8,9 @@ $bngColor: #eee;
 
 .aboutContainer {
         background-color: $bngColor;
+        .containerText:first-child {
+                height: 90vh;
+        }
 }
 
 .contactContainer {
@@ -18,8 +23,10 @@ h1.homeWelcome {
         margin-bottom: -35px;
 }
 
-h1.aboutText {
+h1.aboutTextElement {
         text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 100px;
 }
 
 h5.homeWelcome {
@@ -34,6 +41,30 @@ h5.homeWelcome {
 transform: translateY(-90%);
 }
 
-.containerText {
+.containerText {    
+        position: relative;    
+}
+
+.containerTextInner {
+        position: relative;
         padding: 100px 50px;
+}
+
+.aboutText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+}
+
+.aboutDetail {        
+        font-family: 'Roboto Condensed', sans-serif;
+        h1 {
+                text-align: center;
+                font-size: 100px;
+        }
+        h2{
+                font-size: 22px;
+                margin-bottom: -25px;
+        }
 }
