@@ -1,6 +1,37 @@
 @import 'mixins.scss';
-@import 'navbar.scss';
-body {
+@import 'bodyElements.scss';
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     width: 100%;
+}
+
+.row {
     height: 100%;
+}
+
+.col-left {
+    width: 5%;
+    height: 100%;
+    background-image: url("../../Content/col-left.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: fixed;
+    left:0;
+    top:0;
+}
+
+.col-right {
+    width: 95%;
+    padding-left: 5%;
+    height:100%;
+    background-color: #aaaaaa;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
 }
