@@ -1,0 +1,17 @@
+.cvr {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 54vh;
+    max-height: 1200px;
+    min-height: 200px;
+
+    &:first-child {
+        height: 86vh;
+    }
+}
+
+.cvr-1 {
+    background-image: url('../../Content/homeCover.jpg');
+}

@@ -5,26 +5,31 @@
         <link rel="stylesheet" type="text/css" href="Styles/Css/site.css">
     </head>
     <body ng-controller="pageController">
-        <div class="container">    
+        <div class="container">
             <div class="row">
                 <div class="col-left">
                     <nav>
                     <ul class="nav-menu">
-                        <li><a href="#!">Główna</a></li>
-                        <li><a href="#!about">O mnie</a></li>
-                        <li><a href="#!contact">Kontakt</a></li>
+                        <li><a href="#!"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                        <li><a href="#!about"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#!contact"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
                     </ul>
                     </nav>
                 </div>
                 <div class="col-right">
                     <ng-view></ng-view>
+                    <footer>{{hello}}</footer>  
                 </div>                                     
-            </div>  
-            <footer>{{hello}}</footer>                
+            </div>                          
         </div>      
+       
+        <script src="https://use.fontawesome.com/030c47545b.js"></script>
         <script src="Scripts/angular.js"></script>
         <script src="Scripts/angular-route.js"></script>
+        <script src="Scripts/gator.min.js"></script>
         <script src="Scripts/core/app.js"></script>
         <script src="Scripts/controllers/pageController.js"></script>
+        <script src="Sciprts/site/paralaxController.js"></script>   
+        <script>ParalaxBG.init();</script>    
     </body>
 </html>
