@@ -12,5 +12,5 @@ app.config(function($routeProvider, $locationProvider){
         templateUrl : "./Views/contact.html"
     });
 
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
 });

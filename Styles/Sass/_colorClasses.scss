@@ -1,9 +1,14 @@
 .bg-red {
-    background-color: #f70942;
+    background-image: url('../../Content/redBng.jpg');
     color: white;
 }
 
 .bg-blue {
-    background-color: #4EB2F8;
+    background-image: url('../../Content/blueBng.jpg');
     color: white;
+}
+
+.bg-gray {
+    background-image: url('../../Content/grayBng.jpg');
+    color: black;
 }

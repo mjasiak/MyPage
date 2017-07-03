@@ -35,6 +35,6 @@ $(document).ready(function(){ ReloadParalax(); });
 $(document).bind("DOMSubtreeModified", ReloadParalax);
 
 function ReloadParalax(){
-    images = [].slice.call(document.querySelectorAll('.containerImage'));
+    images = [].slice.call(document.querySelectorAll('.paral'));
 	$(window).scroll(doParallax);
 }
