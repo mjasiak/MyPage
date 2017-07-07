@@ -252,12 +252,12 @@ h5.homeWelcome:hover {
 }
 
 .bg-red {
-  background-image: url("../../Content/redBng.jpg");
+  background-color: #f9527a;
   color: white;
 }
 
 .bg-blue {
-  background-image: url("../../Content/blueBng.jpg");
+  background-color: #a6d8fb;
   color: white;
 }
 
